@@ -1,0 +1,288 @@
+
+body
+{
+  
+  background-size:100% 700px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.container
+{
+ 
+  height:700px;
+  padding: 0px;
+  margin:-10px;
+}
+@media screen and (max-width: 600px) { 
+    .container {
+      display: block;
+      float: none;
+      margin:0;
+      width: 100%;
+    }
+    nav ul li {
+    display:block;
+    border-top:1px #79896D solid;    
+  }
+  nav ul {
+    display:none;
+  }
+
+  }
+  header
+  {
+    background-color: rgba(0, 0, 0,0.7)
+       
+  }
+  #header-id
+  {
+    background-color: rgba(0,0, 0,1);
+    
+    position: fixed; 
+    top: 0;  
+    width: 100%;
+    z-index: 2;
+  }
+  #left-header
+  {
+    padding:5px;
+    float:left;
+  }
+  nav
+  {
+    float:right;
+
+  }
+  #ul1
+  {
+    list-style-type: none;
+    margin-top:-2px;
+    text-decoration-color: white;
+    font-family: 'PT Sans', sans-serif;
+
+  }
+  #ul1 li
+  {
+    float:left;
+    padding:25px 30px;
+    /*margin:10px;*/
+    color:white;
+  }
+  #ul1 li a
+  {
+    text-decoration: none;
+    color:white;
+  }
+  #ul1 li:hover
+  {
+    background-color:rgba(51, 153, 255,0.7);
+  }
+  #ul li a:visited
+  {
+    text-decoration: none;
+    color:white;
+  }
+   #ul li a:active
+  {
+
+    text-decoration: none;
+    color:white;
+  }
+#ul1 .hoverWrapper #hoverShow1 
+{
+
+  display: none;
+  position:absolute;
+  margin-left:185px;
+  margin-top: -30px;
+  background-color: rgba(0,0,0,0.7);
+  width: 550px;
+  height: 250px;
+  left: 200px;
+  top: 100px;
+  color:white;
+  border:2px solid white;
+}
+
+#ul1 .hoverWrapper:hover #hoverShow1
+{
+  display: block;
+}
+#ul1 .hoverWrapper2 #hoverShow2
+{
+
+  display: none;
+  position:absolute;
+  margin-left:390px;
+  margin-top: -30px;
+  background-color: rgba(0,0,0,0.7);
+  width: 250px;
+  height: 250px;
+  left: 200px;
+  top: 100px;
+  color:white;
+  border:2px solid white;
+}
+
+#ul1 .hoverWrapper2:hover #hoverShow2
+{
+  display: block;
+}
+
+#ul1 .hoverWrapper3 #hoverShow3
+{
+
+  display: none;
+  position:absolute;
+  margin-left:510px;
+  margin-top: -30px;
+  background-color: rgba(0,0,0,0.7);
+  width: 250px;
+  height: 250px;
+  left: 200px;
+  top: 100px;
+  color:white;
+  border:2px solid white;
+}
+
+#ul1 .hoverWrapper3:hover #hoverShow3
+{
+  display: block;
+}
+#ul1 .hoverWrapper4 #hoverShow4
+{
+
+  display: none;
+  position:absolute;
+  margin-left:670px;
+  margin-top: -30px;
+  background-color: rgba(0,0,0,0.7);
+  width: 250px;
+  height: 250px;
+  left: 200px;
+  top: 100px;
+  color:white;
+  border:2px solid white;
+}
+
+#ul1 .hoverWrapper4:hover #hoverShow4
+{
+  display: block;
+}
+#ul1 .hoverWrapper5 #hoverShow5
+{
+
+  display: none;
+  position:absolute;
+  margin-left:800px;
+  margin-top: -30px;
+  background-color: rgba(0,0,0,0.7);
+  width: 250px;
+  height: 250px;
+  left: 200px;
+  top: 100px;
+  color:white;
+  border:2px solid white;
+}
+
+#ul1 .hoverWrapper5:hover #hoverShow5
+{
+  display: block;
+}
+
+#hoverShow1 a:hover
+{
+  border-bottom: 1px solid white;
+}
+
+#hoverShow2 a:hover
+{
+  border-bottom: 1px solid white;
+}
+
+#hoverShow3 a:hover
+{
+  border-bottom: 1px solid white;
+}
+
+#hoverShow4 a:hover
+{
+  border-bottom: 1px solid white;
+}
+
+#hoverShow5 a:hover
+{
+  border-bottom: 1px solid white;
+}
+  .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center
+    
+      }
+
+.plpic
+{
+  
+}
+
+.laligapic
+{
+  
+}
+
+.bundesligapic
+{
+  
+}
+
+.serieApic
+{
+  
+}
+
+.ligue1pic
+{
+  
+}
+
+.plpage
+{
+  font-family: 'PT Sans', sans-serif;
+}
+.laligapage
+{
+  font-family: 'PT Sans', sans-serif;
+  
+}
+.seriepage
+{
+  font-family: 'PT Sans', sans-serif;
+  
+}
+.bundesligapage
+{
+  font-family: 'PT Sans', sans-serif;
+  
+}
+.liguepage
+{
+  font-family: 'PT Sans', sans-serif;
+  
+}
+.standings
+{
+  float: left;
+  margin-left: 10px;
+}
+.statistics
+{
+  float: right;
+  margin-right: 40px;
+}
+
+.

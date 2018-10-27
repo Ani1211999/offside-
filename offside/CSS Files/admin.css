@@ -1,0 +1,156 @@
+body
+{
+  background: white;
+  background-size:100% 700px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.container
+{
+ 
+  height:100%;
+  padding: 0px;
+  margin:-10px;
+}
+
+nav
+{
+	
+}
+#header-id
+  {
+    background-color: rgba(0,0, 0,1);
+  }
+  #left-header
+  {
+    padding:5px;
+    background-color: rgba(0,0, 0,1);
+    float:left;
+    position: fixed;
+  }
+  nav
+  {
+  	width: 100%;
+    color: white;
+    background-color: rgba(0,0, 0,1);
+    float: left;
+    margin-left: 10%;
+  }
+
+  .actions
+  {
+  	text-align: center;
+  	border: 1px solid black;
+  }
+  ul
+  {
+  	
+  }
+  ul li
+  {
+  	padding: 10px;
+  }
+  #ul5
+  {
+  	list-style-type: none;
+  	align-content: center;
+  }
+  #ul5 li a
+  {
+    text-decoration: none;
+    color:black;
+  }
+  #ul5 li:hover
+  {
+    background-color:rgba(51, 153, 255,0.7);
+  }
+  #u5 li a:visited
+  {
+    text-decoration: none;
+    color:black;
+  }
+   #ul5 li a:active
+  {
+
+    text-decoration: none;
+    color:black
+  }
+
+  .admin_window
+  {
+  	display: flex;
+   flex-flow: row wrap;
+  }
+  .admin_user
+  {
+  	margin-left: 5%;
+  }
+
+  input[type=text] {
+    width: 200px;
+  
+   padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    }
+
+input[type=email], input[type=password] {
+    width: 200px;
+   
+   padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+}
+input[type=text]:focus {
+    
+    background-color: #d3e4e5;
+}
+input[type=email]:focus,input[type=password]:focus{
+   
+    background-color: #d3e4e5;
+}
+
+.users
+{
+	margin-top: 5%;
+	margin-left: 10%;
+}
+table,th,tr,td
+{
+	border-collapse: collapse;
+}
+table th
+{
+	width: 200px;
+	padding: 30px;
+	padding-top: 10px;
+	border: 1px solid black;
+	
+}
+
+tr td
+{
+	width: 200px;
+	padding: 30px;
+	border: 1px solid black;
+	
+}

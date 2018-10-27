@@ -1,0 +1,989 @@
+
+body
+{
+  /*background-image: url(../IMAGES/fachry-zella-devandra-714236-unsplash.jpg);*/
+  background: rgba(0,0,0,0.7);
+  background-size:100% 700px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'PT Sans', sans-serif;
+
+ 
+}
+
+.container
+{
+  
+  height:700px;
+  padding: 0px;
+  margin:-10px;
+
+    
+}
+
+}
+.container1
+{
+  height: 100%;
+  width: 100%;
+}
+
+.clubs_body
+{
+  background: white;
+}
+
+
+  
+
+  header
+  {
+    
+  }
+  #header-id
+  {
+    background-color: rgba(0,0, 0,1);
+    
+    position: fixed; 
+    top: 0;  
+    width: 100%;
+    z-index: 2;
+  }
+  #left-header
+  {
+    padding:5px;
+    background-color: rgba(0,0, 0,1);
+    float:left;
+    position: fixed;
+  }
+  nav
+  {
+    background-color: rgba(0,0, 0,1);
+    float:right;
+   
+  }
+
+
+
+  #ul1
+  {
+    list-style-type: none;
+    margin-top:-2px;
+    text-decoration-color: white;
+    
+
+  }
+  #ul1 li
+  {
+    float:left;
+    padding:25px 30px;
+    /*margin:10px;*/
+    color:white;
+  }
+  #ul1 li a
+  {
+    text-decoration: none;
+    color:white;
+  }
+  #ul1 li:hover
+  {
+    background-color:rgba(51, 153, 255,0.7);
+
+  }
+  #ul li a:visited
+  {
+    text-decoration: none;
+    color:white;
+  }
+   #ul li a:active
+  {
+
+    text-decoration: none;
+    color:white;
+  }
+#ul1 .hoverWrapper #hoverShow1 
+{
+
+  display: none;
+  position:absolute;
+  margin-left:185px;
+  margin-top: -30px;
+  background-color: rgba(0,0,0,0.9);
+  width: 550px;
+  height: 250px;
+  left: 200px;
+  top: 100px;
+  color:white;
+  
+  position: absolute;
+  z-index: 999;
+}
+
+#ul1 .hoverWrapper:hover #hoverShow1
+{
+  display: block;
+}
+#ul1 .hoverWrapper2 #hoverShow2
+{
+
+  display: none;
+  position:absolute;
+  margin-left:390px;
+  margin-top: -30px;
+  background-color: rgba(0,0,0,0.9);
+  width: 250px;
+  height: 250px;
+  left: 200px;
+  top: 100px;
+  color:white;
+  
+  position: absolute;
+  z-index: 999;
+}
+
+#ul1 .hoverWrapper2:hover #hoverShow2
+{
+  display: block;
+}
+
+#ul1 .hoverWrapper3 #hoverShow3
+{
+
+  display: none;
+  position:absolute;
+  margin-left:510px;
+  margin-top: -30px;
+  background-color: rgba(0,0,0,0.9);
+  width: 250px;
+  height: 250px;
+  left: 200px;
+  top: 100px;
+  color:white;
+  
+  position: absolute;
+  z-index: 999;
+}
+
+#ul1 .hoverWrapper3:hover #hoverShow3
+{
+  display: block;
+}
+#ul1 .hoverWrapper4 #hoverShow4
+{
+
+  display: none;
+  position:absolute;
+  margin-left:670px;
+  margin-top: -30px;
+  background-color: rgba(0,0,0,0.9);
+  width: 250px;
+  height: 250px;
+  left: 200px;
+  top: 100px;
+  color:white;
+  
+  position: absolute;
+  z-index: 999;
+}
+
+#ul1 .hoverWrapper4:hover #hoverShow4
+{
+  display: block;
+}
+#ul1 .hoverWrapper5 #hoverShow5
+{
+
+  display: none;
+  position:absolute;
+  margin-left:800px;
+  margin-top: -30px;
+  background-color: rgba(0,0,0,0.9);
+  width: 250px;
+  height: 250px;
+  left: 200px;
+  top: 100px;
+  color:white;
+  
+  position: absolute;
+  z-index: 999;
+}
+
+#ul1 .hoverWrapper5:hover #hoverShow5
+{
+  display: block;
+}
+
+
+#hoverShow1 a:hover
+{
+  border-bottom: 1px solid white;
+}
+
+#hoverShow2 a:hover
+{
+  border-bottom: 1px solid white;
+}
+
+#hoverShow3 a:hover
+{
+  border-bottom: 1px solid white;
+}
+
+#hoverShow4 a:hover
+{
+  border-bottom: 1px solid white;
+}
+
+#hoverShow5 a:hover
+{
+  border-bottom: 1px solid white;
+}
+
+.home_window
+{
+  display: flex;
+   flex-flow: row wrap;
+    margin-top: 10%;
+    height: 75%;
+   border: 2px solid white;
+   
+}
+
+
+
+  /*nav ul {
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul.open{
+    height: auto;
+  }
+
+  nav ul li {
+    float: none;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+  }
+  nav ul li a{
+    color: #fff;
+    padding: 10px;
+    display: block;
+  }
+
+  .slides
+  {
+    width: 20%;
+  }
+
+  footer
+  {
+    margin-bottom: 0%;
+    width: 100%;
+  }*/
+
+
+/*latest news window home*/
+ #side-bar
+{
+  height:65px;
+  width:320px;
+  border:2px solid white;
+  margin-top: 5%;
+  margin-left: 15%;
+  
+  background: rgba(0,0,0,0.7);
+}
+
+#latest_news
+{
+  color: white;
+  text-align: center;
+  border-bottom: 2px solid white;
+}
+
+#latest_news a:
+{
+  color: white;
+  text-align: center;
+  border-bottom: 2px solid white;
+}
+
+#latest_news a
+  {
+    text-decoration: none;
+    color:white;
+  }
+  
+
+#side-bar #ul2 
+{
+  
+}
+.nav_news
+{
+  height: 257px;
+  width: 200px;
+}
+#ul2 li
+{
+  margin-left: 0%;
+  list-style-type: none; 
+  padding: 10px;
+  
+}
+
+
+
+
+#ul2 li a
+{
+  text-decoration: none;
+  color:white;
+  
+}
+
+#ul2 li a:hover
+{
+ border-bottom: 1px solid white;
+}
+
+#ul2 li a:visited
+{`
+  text-decoration: none;
+  color:white;
+}
+
+#ul2 li a:active
+{
+  text-decoration: none;
+  color:white;
+}
+
+
+
+marquee
+{
+  white-space:nowrap;
+}
+
+.snippet_home
+{
+  
+  margin-top: 0%;
+  padding-top: 50px;
+  margin-left: 5%;
+/*  border: 2px solid white;
+*/  /*transition: all 1s;*/
+}
+
+/*.snippet_home:hover {
+  transform: scale(1.1);
+}*/
+
+
+@media screen and (max-width: 990px) { 
+    
+
+                  .container{
+                   
+                    float: none;
+                    margin:0;
+                    width: 100%;
+                  }
+                  
+
+
+                  
+
+                  #header-id
+                  {
+                    display: table;
+                  }
+
+                nav{
+                  float: none;
+                  
+                  width: 100%;
+                  
+                }
+
+                nav ul{
+                  overflow: hidden;
+                  display: flex;
+                  flex-flow: row wrap;
+                  margin: 0;
+                  
+                }
+
+                nav ul.open{
+                  height: auto;
+                }
+
+                #left-header
+                {
+                  display: table-cell;
+                  text-align: center;
+                  margin: 10px auto 0;
+                  float: none;
+
+                }
+                
+                nav ul li{
+                  flex: 1 auto;
+                  text-align: center;
+                  white-space: nowrap;
+                  float: none;
+                  text-align: left;
+                  width: 100%;
+                  margin: 10px 0;
+                  width: 20%;
+                  padding: 0;
+                  text-align: center;
+
+                }
+
+
+
+                .burger_nav{
+                    display: block;
+                    height: 40px;
+                    width: 100%;
+                    background: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff") no-repeat 98%;
+                    background-color: rgba(0,0,0,0.7);
+                    cursor: pointer;
+                    float: right;
+                  }
+
+                  ul
+                  {
+                    
+                    height: 0;
+                  }
+
+                  
+
+                  
+                  .slides
+                  {
+                      display: none;
+                  }
+
+                  #side-bar
+                  {   
+                      align-content: center;
+                      width: 400px;
+                  }
+                  /*.nav_news
+                  {
+                      display: none;
+                      opacity: 0; 
+                        
+                  }
+*/
+                  
+
+    
+}
+
+.sub_nav
+  {
+    background-color: : rgba(0,0,0,0.5);
+
+  }
+
+  #ul_subnav
+  {
+    list-style-type: none;
+    margin-top:-2px;
+    text-decoration-color: white;
+    margin-left: 185px;
+    position: relative;
+
+  }
+  #ul_subnav li
+  {
+    float:left;
+    padding:25px 30px;
+    /*margin:10px;*/
+    color:white;
+  }
+  #ul_subnav li a
+  {
+    text-decoration: none;
+    color:white;
+  }
+  #ul_subnav li:hover
+  {
+    background-color:rgba(51, 153, 255,0.7);
+
+  }
+  #ul_subnav li a:visited
+  {
+    text-decoration: none;
+    color:white;
+  }
+   #ul_subnav li a:active
+  {
+
+    text-decoration: none;
+    color:white;
+  }
+
+  
+
+.profile_head
+{
+  
+  display: noflex;
+  flex-wrap: nowrap;
+
+  margin-top: 12%;
+  width: 100%;
+  /*border: 1px solid black;*/
+  text-align: left;
+  margin-left: 10%;
+}
+
+.club_window
+{
+/*  border: 1px solid black;
+*/ 
+  display: flex;
+  flex-wrap: nowrap;
+  height: 350px;
+}
+
+#club_info
+{
+  
+  display: noflex;
+  flex-wrap: nowrap;
+  height: 328px;
+  width: 300px;
+  margin-left: 5%;
+  padding: 10px;
+
+}
+.club_news
+{
+  display: flex;
+  float: right;
+  display: block;
+  margin-left: 20%;
+  margin-right: 10%;
+  width: 100%;
+/*  border: 1px solid black;
+*/}
+
+
+.slides {
+    padding: 0;
+    min-width: 700px;
+    
+    height: 340px;
+    
+    margin: 0 auto;
+    position: relative;
+    
+    transition: all 0.3s;
+}
+.slides:hover
+{
+  transition: scale 1.1;
+}
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 700px;
+    height: 340px;
+    display: block;
+    position: absolute;
+    
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 0.2; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+  width: 100%;
+  bottom: 9px;
+  height: 11px;
+  display: block;
+  position: absolute;
+  text-align: center;
+}
+
+.nav-dots .nav-dot {
+  top: -5px;
+  width: 11px;
+  height: 11px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.news
+{
+  display: noflex;
+  flex-wrap: nowrap;
+
+  
+  width: 100%;
+  border: 1px solid black;
+  text-align: center;
+
+}
+
+#club-feed
+{
+  width: 100%;
+  height: 400px;
+}
+
+.transfer-feed
+{
+  width: 100%;
+  height: 400px;
+  margin-top: 5%;
+}
+
+.club_links
+{
+  display: noflex;
+  flex-wrap: nowrap;
+
+  
+  text-align: left;
+  margin-left: 5%;
+}
+
+/*video slider*/
+/*Code for video slider modified from https://codepen.io/johnmotyljr/pen/cDpEH?editors=1100#0 */
+
+/*section {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  padding: 3%;
+  border-radius: 10px;
+}*/
+
+.news-home
+{
+  display: noflex;
+  flex-wrap: nowrap;
+  color: white;
+ 
+  width: 100%;
+  border: 1px solid white;
+  text-align: center;
+
+}
+
+.home_video
+{
+  border: 1px solid white;
+}
+
+#videos {
+  
+  /*height: 343px;*/
+}
+
+.slider1 {
+
+  position: relative;
+  height:100%;
+  width: auto;
+  max-width: 600px;
+  margin: auto;
+  max-width: 560px;
+}
+
+.slide1 {
+  position: absolute;
+  height:100%;
+  width:100%;
+  top: 0;
+}
+
+#video1 {
+  position: relative;
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 52%;
+  height: 0; 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+iframe {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vidclass{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.control-container {
+  position: relative;
+}
+
+.prev,
+.next {
+  position: absolute;
+  width: 50%;
+  height: 50px;
+  opacity:0.5;
+  cursor:pointer;
+  display: inline;
+}
+
+.prev {
+  left:0;
+  background: #0000 url('https://png.icons8.com/dotty/50/FFC038/chevron-left.png') no-repeat left;
+  border-bottom-left-radius: 10px;
+}
+
+.next {
+  right:0;
+  background: #0000 url('https://png.icons8.com/dotty/50/FFC038/chevron-right.png') no-repeat right;
+  border-bottom-right-radius: 10px;
+}
+
+a.prev:hover,a.next:hover {
+  opacity:1;
+}
+
+.slider1 .slide1:target {
+  z-index: 1;
+}
+
+.video_links
+{
+  height: 400px;
+  width: 100%;
+  
+  color: white;
+  border-bottom: 1px,solid white;
+}
+.club_videos
+{
+  border: 1px solid black;
+}
+.links
+{
+  text-align: center;
+  
+}
+}
+
+#ul3
+{
+  
+}
+
+#ul3 li
+{
+  padding: 15px;
+  list-style-type: none; 
+}
+
+#ul3 li a
+{
+  text-decoration: none;
+  color:white;
+  
+}
+#ul3 li a:hover
+{
+ border-bottom: 1px solid white;
+}
+#ul3 li a:visited
+{`
+  text-decoration: none;
+  color:white;
+}
+#ul3 li a:active
+{
+  text-decoration: none;
+  color:white;
+}
+
+.club-articles
+{
+  text-align: center;
+  border: 1px,solid black;
+  color: white;
+  margin-left: 5%;
+}
+
+
+
+#ul4
+{
+  
+}
+
+#ul4 li
+{
+  padding: 15px;
+  list-style-type: none; 
+}
+
+#ul4 li a
+{
+  text-decoration: none;
+  color:black;
+  
+}
+/*#ul4 li:hover
+{
+  background-color:rgba(0, 102, 204,0.7);
+  
+}*/
+#ul4 li a:visited
+{`
+  text-decoration: none;
+  color:black;
+}
+#ul4 li a:active
+{
+  text-decoration: none;
+  color:black;
+}
+
+
+
+
+footer {
+  
+  text-align: center;
+  color: white;
+  .grid(full);
+  background: rgba(0,0,0,0.7);
+  border-top: 0.0625em solid lightgrey;
+  bottom: 0;
+  color: #000000;   
+  height: 5em; // 
+  position: absolute; 
+  .col(12; @ta: center);
+    padding: 1.25em;
+    margin-top: 5%;
+  }
+footer a
+{
+  text-decoration: none;
+  color: white;
+}
+
+footer a:visited
+{
+  text-decoration: none;
+  color: white;
+}
+
+footer a:active
+{
+  text-decoration: none;
+  color: white;
+}
+
+footer :hover
+{
+  border-bottom: 2px,solid white;
+}
+    
+small
+{
+  color: white;
+}
+
+

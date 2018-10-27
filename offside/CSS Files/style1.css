@@ -1,0 +1,62 @@
+
+#loginc
+{
+    margin-top: 10%;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+}
+#signup
+{
+    margin-top: 10%;
+    margin-left: 5%;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+}
+input[type=text] {
+    width: 200px;
+   -webkit-transition: width .35s ease-in-out;
+   transition: width .35s ease-in-out;
+   padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    }
+
+input[type=email], input[type=password] {
+    width: 200px;
+   -webkit-transition: width .35s ease-in-out;
+   transition: width .35s ease-in-out;
+   padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+}
+input[type=text]:focus {
+    width:400px;
+    background-color: #d3e4e5;
+}
+input[type=email]:focus,input[type=password]:focus{
+    width:400px;
+    background-color: #d3e4e5;
+}
+
+a
+{
+    color: white;
+}
