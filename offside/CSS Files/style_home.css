@@ -741,11 +741,11 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
    
 }
 
-.teams
+.teams 
 {
   text-transform: uppercase;
   padding: 5px;
-  display: none;
+ 
 }
 
 .closeBtn

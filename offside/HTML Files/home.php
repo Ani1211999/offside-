@@ -1,10 +1,6 @@
 <?php
 
-  if($_SESSION)
-  {
-    if(isset($_GET['firstname']))
-      $username=$_GET['firstname'];
-  }
+  
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,10 +14,10 @@
 	</style>
 	<title>Welcome to Offside</title>
 	<link rel="shortcut icon" href="../IMAGES/oglogo.png" type="image/png">
-	<link rel="stylesheet" type="text/css" href="../CSS Files/style_vishwa.css">
+	<link rel="stylesheet" type="text/css" href="../CSS Files/style_home.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <script type="text/javascript" src="mq.js"></script>
-</head>
+</head> 
 <body>
   <?php
     $conn=mysqli_connect('localhost','root','','offside');
@@ -31,10 +27,7 @@
     }
   ?>
 	<div class="container">
-    
-      
-      
-    <div id="header-id">
+     <div id="header-id">
 		  <header>
 			<div id="left-header">
 				<a href="home.php"><img src="../IMAGES/oglogo.png" alt="Offside" width="50px" height="50px"></a>
@@ -55,7 +48,7 @@
 					<li class="hoverWrapper">
           <a href= <?php echo $link ?>>PREMIER LEAGUE</a>
                        <div id="hoverShow1">
-                       	<table>
+                       	<table class="teams">
                        	<tr><th>Premier League Clubs</th></tr><br>
                        	<div id="plclubs">
                           <?php
@@ -91,7 +84,7 @@
 					</li>
 					<li class="hoverWrapper2"><a href="league.php?league_id=3">LA LIGA</a>
 						<div id="hoverShow2">
-						<table>
+						<table class="teams">
               
                        	<tr><th>La Liga Clubs</th></tr><br>
                        	<div id="laligaclubs">
@@ -113,7 +106,7 @@
 					</li>
 					<li class="hoverWrapper3"><a href="league.php?league_id=2">BUNDESLIGA</a>
 						<div id="hoverShow3">
-						<table>
+						<table class='teams'>
                        			<tr><th>Bundesliga Clubs</th></tr><br>
                        	<div id="bundesligaclubs">
 
@@ -134,7 +127,7 @@
 					</li>
 					<li class="hoverWrapper4"><a href="league.php?league_id=4">SERIE A</a>
 						<div id="hoverShow4">
-						<table>
+						<table class="teams">
                        			<tr><th>Serie-A Clubs</th></tr><br>
                        	<div id="seriaAclubs">
 
@@ -155,7 +148,7 @@
 					</li>
 					<li class="hoverWrapper5"><a href="league.php?league_id=5">LIGUE 1</a>
 						<div id="hoverShow5">
-						<table>
+						<table class='teams'>
                        	<tr><th>Ligue-1 Clubs</th></tr><br>
                        	<div id="ligue1clubs">
                           <?php
@@ -176,7 +169,7 @@
 					</li>
           <?php
 
-            if(isset($_GET['firstname']))
+            /*if($_SESSION['uid'])
             {
               $query="Select fav_team from users where first_name=".$_GET['firstname'].";";
               $result=mysqli_query($conn,$query);
@@ -186,12 +179,12 @@
                 $favteam=$fin[0];
               }
               echo "<li><a href=#>Welcome ".$_GET['firstname']."</a></li>";
-            }
+            }*/
           
-          else
-          {
+          /*else
+          {*/
             echo "<li ><a href='login.php'>LOGIN</a></li>";
-          }
+          //}
           ?>
 					
 					<li ><a href="signup.php">SIGNUP</a></li>
