@@ -17,7 +17,7 @@ if(mysqli_num_rows($result)>0){ $leaguedetail = mysqli_fetch_assoc($result);
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../IMAGES/oglogo.png" type="image/png">
 	<!--<link rel="stylesheet" type="text/css" href="../CSS Files/style_home.css">-->
-	<link rel="stylesheet" type="text/css" href="../CSS Files/style_league.css">
+	<link rel="stylesheet" type="text/css" href="../CSS Files/style_leaguefinal11.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 	<script type="text/javascript">
@@ -232,6 +232,7 @@ if(mysqli_num_rows($result)>0){ $leaguedetail = mysqli_fetch_assoc($result);
                 echo substr($details['currentSeason']['endDate'], 0,4);
                 echo "<hr>";
                 echo "<strong>Current MatchDay:-</strong>".$details['currentSeason']['currentMatchday']."<hr>";
+                $plmatchday=$details['currentSeason']['currentMatchday'];
                 echo "<strong>Season Ends-</strong>".$details['currentSeason']['endDate']."<hr>";
   			 }
   			 elseif($_GET['league_id']==2)
@@ -253,6 +254,7 @@ if(mysqli_num_rows($result)>0){ $leaguedetail = mysqli_fetch_assoc($result);
                 echo substr($details['currentSeason']['endDate'], 0,4);
                 echo "<hr>";
                 echo "<strong>Current MatchDay:-</strong>".$details['currentSeason']['currentMatchday']."<hr>";
+                $blmatchday=$details['currentSeason']['currentMatchday'];
                 echo "<strong>Season Ends-</strong>".$details['currentSeason']['endDate']."<hr>";
   			 }
   			 elseif($_GET['league_id']==3)
@@ -274,6 +276,7 @@ if(mysqli_num_rows($result)>0){ $leaguedetail = mysqli_fetch_assoc($result);
                 echo substr($details['currentSeason']['endDate'], 0,4);
                 echo "<hr>";
                 echo "<strong>Current MatchDay:-</strong>".$details['currentSeason']['currentMatchday']."<hr>";
+                $lamatchday=$details['currentSeason']['currentMatchday'];
                 echo "<strong>Season Ends-</strong>".$details['currentSeason']['endDate']."<hr>";
   			 }
   			 elseif($_GET['league_id']==4)
@@ -295,6 +298,7 @@ if(mysqli_num_rows($result)>0){ $leaguedetail = mysqli_fetch_assoc($result);
                 echo substr($details['currentSeason']['endDate'], 0,4);
                 echo "<hr>";
                 echo "<strong>Current MatchDay:-</strong>".$details['currentSeason']['currentMatchday']."<hr>";
+                $samatchday=$details['currentSeason']['currentMatchday'];
                 echo "<strong>Season Ends-</strong>".$details['currentSeason']['endDate']."<hr>";
   			 }
   			 else
@@ -316,6 +320,7 @@ if(mysqli_num_rows($result)>0){ $leaguedetail = mysqli_fetch_assoc($result);
                 echo substr($details['currentSeason']['endDate'], 0,4);
                 echo "<hr>";
                 echo "<strong>Current MatchDay:-</strong>".$details['currentSeason']['currentMatchday']."<hr>";
+                $limatchday=$details['currentSeason']['currentMatchday'];
                 echo "<strong>Season Ends-</strong>".$details['currentSeason']['endDate']."<hr>";
   			 }
 
@@ -352,7 +357,7 @@ if(mysqli_num_rows($result)>0){ $leaguedetail = mysqli_fetch_assoc($result);
                   ?>
                   <table id="ptable">
         		  <div><h2 align='center' id="stand">STANDINGS</h2></div>
-        		  <div><button onclick="openmodal('id01')">See Full Standings</button></div><br>
+        		  <div><button id='stand-btn' onclick="openmodal('id01')">See Full Standings</button></div><br>
         		  <div style="clear: both">
         		  	
         		  </div>
@@ -509,23 +514,23 @@ if(mysqli_num_rows($result)>0){ $leaguedetail = mysqli_fetch_assoc($result);
 			<?php
 				if($_GET['league_id']==1)
 				{
-					$uri="http://api.football-data.org/v2/competitions/2021/scorers";
+					$uri="http://api.football-data.org/v2/competitions/2021/scorers?limit=5";
 				}
 				elseif($_GET['league_id']==2)
 				{
-					$uri="http://api.football-data.org/v2/competitions/2002/scorers";
+					$uri="http://api.football-data.org/v2/competitions/2002/scorers?limit=5";
 				}
 				elseif($_GET['league_id']==3)
 				{
-					$uri="http://api.football-data.org/v2/competitions/2014/scorers";
+					$uri="http://api.football-data.org/v2/competitions/2014/scorers?limit=5";
 				}
 				elseif($_GET['league_id']==4)
 				{
-					$uri="http://api.football-data.org/v2/competitions/2019/scorers";
+					$uri="http://api.football-data.org/v2/competitions/2019/scorers?limit=5";
 				}
 				else
 				{
-					$uri="http://api.football-data.org/v2/competitions/2015/scorers";
+					$uri="http://api.football-data.org/v2/competitions/2015/scorers?limit=5";
 				}
 		
 			    $reqPrefs['http']['method'] = 'GET';
@@ -546,10 +551,182 @@ if(mysqli_num_rows($result)>0){ $leaguedetail = mysqli_fetch_assoc($result);
           			";
           			echo "<hr>";
           		}
-          	?>
+          	
+          	if($_GET['league_id']==1)
+				{
+					$uri="http://api.football-data.org/v2/competitions/2021/teams";
+				}
+				elseif($_GET['league_id']==2)
+				{
+					$uri="http://api.football-data.org/v2/competitions/2002/teams";
+				}
+				elseif($_GET['league_id']==3)
+				{
+					$uri="http://api.football-data.org/v2/competitions/2014/teams";
+				}
+				elseif($_GET['league_id']==4)
+				{
+					$uri="http://api.football-data.org/v2/competitions/2019/teams";
+				}
+				else
+				{
+					$uri="http://api.football-data.org/v2/competitions/2015/teams";
+				}
+		
+			    $reqPrefs['http']['method'] = 'GET';
+		        $reqPrefs['http']['header'] = 'X-Auth-Token:e2fae907fb314818a2b60cc2682202f5';
+		        $stream_context = stream_context_create($reqPrefs);
+		        $response = file_get_contents($uri, false, $stream_context);
+		        $teamfor = json_decode($response,true);
+		        ?>
           <!--</table>-->
   		</div>
+  		<div class='fixturestable'>
+  			<?php
+  				if($_GET['league_id']==1)
+				{
+					$uri="http://api.football-data.org/v2/competitions/2021/matches?matchday=$plmatchday";
+				}
+				elseif($_GET['league_id']==2)
+				{
+					$uri="http://api.football-data.org/v2/competitions/2002/matches?matchday=$blmatchday";
+				}
+				elseif($_GET['league_id']==3)
+				{
+					$uri="http://api.football-data.org/v2/competitions/2014/matches?matchday=$lamatchday";
+				}
+				elseif($_GET['league_id']==4)
+				{
+					$uri="http://api.football-data.org/v2/competitions/2019/matches?matchday=$samatchday";
+				}
+				else
+				{
+					$uri="http://api.football-data.org/v2/competitions/2015/matches?matchday=$limatchday";
+				}
+				$reqPrefs['http']['method'] = 'GET';
+          		$reqPrefs['http']['header'] = 'X-Auth-Token:0e0a131adea24c77a2d4901ba2395dcb';
+          		$stream_context = stream_context_create($reqPrefs);
+          		$response = file_get_contents($uri, false, $stream_context);
+         		$cumatch = json_decode($response,true);	
 
+
+         		echo "<div id='heading'>";
+         		echo "<button class='left-btn' display='inline'>&#10094</button>" ;
+         		echo "<h2>MatchDay: ".$cumatch['filters']['matchday']."</h2>";
+         		echo "<button class='right-btn' display='inline'>&#10095</button>" ;
+         		echo "</div>";
+         		$count=0;
+         		$checkover=array();
+         		$a= array();
+         		for($i=0;$i<sizeof($cumatch['matches']);$i++)
+         		{
+         			$ht=$cumatch['matches'][$i]['homeTeam']['name'];
+         			$f=substr($cumatch['matches'][$i]['utcDate'],0,10);
+         			$ftdate=substr($cumatch['matches'][$i]['utcDate'],11,5)."GMT";
+         			array_push($a,$f);
+         			if($count==0)
+         			{
+         				for($b=$i+1;$b<sizeof($cumatch['matches']);$b++)
+         				{
+	         				$ftdate=substr($cumatch['matches'][$b]['utcDate'],0,10);
+	         				if(!in_array($ftdate, $a))
+	         					array_push($a, $ftdate);
+         				}
+         				$count++;
+         			}
+         			for($m=0;$m<sizeof($a);$m++)
+         			{
+         				if($f==$a[$m] && !in_array($f, $checkover))
+         				{
+         					$year = date('Y', strtotime($f));
+         					//print($f);
+         					$dayofweek=date('l',strtotime($f));
+							$month = date('F', strtotime($f));
+							$nodate=substr($f,8,2);
+							
+         					echo "<div id=dateoffix>";
+         					echo $dayofweek;
+         					echo ",";
+         					echo $nodate;
+         					echo"<sup>th</sup>";
+         					echo "&nbsp;";
+         					echo $month;
+         					echo"&nbsp;";
+         					echo $year;
+         					echo "</div>";
+         					array_push($checkover, $f);
+         					//print_r($checkover);
+         				}
+         			}
+         			$at=$cumatch['matches'][$i]['awayTeam']['name'];
+         			if($cumatch['matches'][$i]['status']=='FINISHED')
+         			{
+         				
+         				for($j=0;$j<sizeof($teamfor['teams']);$j++)
+         				{
+         					if($teamfor['teams'][$j]['name']==$ht)
+         					{
+         						$htshort=$teamfor['teams'][$j]['tla'];
+         						$htlogo=$teamfor['teams'][$j]['crestUrl'];
+         					}
+         					if($teamfor['teams'][$j]['name']==$at)
+         					{
+         						$atshort=$teamfor['teams'][$j]['tla'];
+         						$atlogo=$teamfor['teams'][$j]['crestUrl'];
+         					}
+         				}
+         				echo "<div id='scorematch'>";
+         				echo "<span ><img src=".$htlogo." id='htlogo' alt='ef'/>";
+         				echo "$htshort";
+         				echo "&emsp;";
+         				echo  "<p background-color='rgb(179, 179, 179)'>".$cumatch['matches'][$i]['score']['fullTime']['homeTeam']."-".$cumatch['matches'][$i]['score']['fullTime']['awayTeam']."</p>";
+         				echo "&emsp;";
+         				echo $atshort;
+         				echo "<img src=".$atlogo." id='atlogo'/></span>";
+         				echo "</div>";
+       
+  
+         				echo "<hr>";
+         			}
+         			else
+         			{
+         				for($j=0;$j<sizeof($teamfor['teams']);$j++)
+         				{
+         					if($teamfor['teams'][$j]['name']==$ht)
+         					{
+         						$htshort=$teamfor['teams'][$j]['tla'];
+         						$htlogo=$teamfor['teams'][$j]['crestUrl'];
+         					}
+         					if($teamfor['teams'][$j]['name']==$at)
+         					{
+         						$atshort=$teamfor['teams'][$j]['tla'];
+         						$atlogo=$teamfor['teams'][$j]['crestUrl'];
+         					}
+         				}
+ 						
+         				echo "<div id='date'>";
+         				echo "<div id='scorematch'>";
+         				echo "<span ><img src=".$htlogo." id='htlogo' alt='ef'/>";
+         				echo "$htshort";
+         				echo "&emsp;";
+         				echo  "<span id='displayfix'>".substr($cumatch['matches'][$i]['utcDate'],11,5)."GMT"."</span>";
+
+         				echo "&emsp;";
+         				echo $atshort;
+         				echo "<img src=".$atlogo." id='atlogo'/></span>";
+         				echo "</div>";
+         				echo "<hr>";
+         				echo "</div>";
+         			}
+         		}
+         		
+
+         	?>
+
+
+
+  		</div>
+  		<div style="clear:both;"></div>
 </section> 		
  
   </main>
