@@ -5,7 +5,7 @@ body
 	font-family: 'PT Sans', sans-serif;
 	overflow-x:hidden; 
 }
-button
+#stand-btn
 {
 	background-color: rgb(102, 0, 255);
 	padding: 10px;
@@ -43,7 +43,7 @@ button
   overflow: hidden;
   top:0;
   left: 0;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
 
 }
@@ -58,17 +58,73 @@ button
   height:80%;
 
 }
+.left-btn,.right-btn
+{
+  background-color: black;
+}
+#displayfix
+{
+  background-color: rgb(179, 179, 179);
+  padding: 2%;
+  padding-bottom:0.7%; 
+}
+.ftable
+{
+  border:1px solid brown;
+}
+#htlogo,#atlogo
+{
+  display:inline; 
+  margin-top:3%; 
+  width:7%;
+  height: auto;
+}
+#dateoffix
+{
+  text-align:center;
+  background-color: rgb(217, 217, 217);
+  text-transform: uppercase;
+  border:1px solid brown;
+}
+
+#scorematch
+{
+  text-align:center
+  ;
+  box-sizing: border-box;
+  font-size: 19px;
+}
+#id04
+{
+  display: none;
+}
 .fixturestable
 {
 	
 	/*margin-right: 13%;
 
 */
-	border:3px solid blue;
-	margin-top:46%; 
-	
-
-	
+	border:1px solid brown;
+  font-family: 'Poppins',sans-serif;
+  
+	float: right;
+  width:28%;
+  
+  
+ 
+  margin-top: 3%; 
+	margin-right:1%; 
+ 
+  box-sizing: border-box; 
+}
+#heading
+{
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
+  top: 0;
+  background-color: rgb(204, 255, 255);
+  position: sticky;
+  border:1px solid brown;
 }
 .closeBtn
 {
@@ -77,7 +133,6 @@ button
   margin-top:-20px;  
   float: right;
 }
-
 .closeBtn:hover,.closeBtn:focus
 {
   background-color: gray;
@@ -101,15 +156,15 @@ button
 	font-family: arial, sans-serif;
 	display: flex;
     border-collapse: collapse;
-    width: 98%;
-    box-sizing: border-box;
+    width: 100%;
     overflow-x: scroll;
+
 }
 #ptable td,th
 {
     border: 1px solid #dddddd;
     text-align:center;
-    padding: 2px;
+    padding: 4px;
 }
 
 .standings
